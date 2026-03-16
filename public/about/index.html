@@ -1,0 +1,614 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于我公开的私密资料 | Just Cat</title><meta name="author" content="Catts"><meta name="copyright" content="Catts"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="/* 头像卡片 */     .author-img {         position: relative; /* 设置相对定位 */     }      .author-box {         text-align: center;         padding: 20px;         height: auto;         border-bottom: 2px">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我公开的私密资料">
+<meta property="og:url" content="http://yasilansi.github.io/about/index.html">
+<meta property="og:site_name" content="Just Cat">
+<meta property="og:description" content="/* 头像卡片 */     .author-img {         position: relative; /* 设置相对定位 */     }      .author-box {         text-align: center;         padding: 20px;         height: auto;         border-bottom: 2px">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yasilansi.github.io/img/avatar.jpg">
+<meta property="article:published_time" content="2026-03-08T08:32:07.000Z">
+<meta property="article:modified_time" content="2026-03-13T05:23:11.291Z">
+<meta property="article:author" content="Catts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yasilansi.github.io/img/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/avatar.png"><link rel="canonical" href="http://yasilansi.github.io/about/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关于我公开的私密资料',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/sweetalert.css"><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div class="bg-animation" id="web_bg" style="background-image: url(/img/bg.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="page type-about" id="body-wrap"><header class="not-home-page fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" alt="Logo"><span class="site-name">Just Cat</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">关于我公开的私密资料</h1></div></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="container" id="article-container"><style>
+    /* 头像卡片 */
+    .author-img {
+        position: relative; /* 设置相对定位 */
+    }
+
+    .author-box {
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+        /* 分割线 */
+    }
+
+    .author-img img {
+        border-radius: 50%; /* 显示为圆形 */
+        width: 150px; /* 宽度设置 */
+        height: 150px; /* 高度保持一致，否则就成椭圆了 */
+        margin-bottom: 10px;
+    }
+
+    .green-dot {
+        position: absolute;
+        right: calc(50% - 67px);
+        bottom: 13px;
+        width: 20px; /* 小圆点的宽度 */
+        height: 20px; /* 小圆点的高度 */
+        background-color: rgb(40, 231, 139); /* 小圆点的颜色，感觉很好看，对照着QQ的颜色搞的 */
+        border-radius: 50%; /* 使小圆点变成圆形 */
+    }
+
+    /* 文本格式，全局 */
+    .content h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /* 设置每一节宽度，高度，长度等等 */
+    .content .column {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 65%;
+        margin-left: 20px;
+    }
+
+    /* 给第一格个人信息进行适配 */
+    .content .info-columns {
+        margin: 10px 0;
+    }
+
+    /* 第一格的个人信息，我使用了表格，为了显示更多信息的同时不空出大部分地方，你们自行选择 */
+    .content .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 每一节通用格式 */
+    .section {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: none;
+        margin-top: 20px;
+        margin: 20px 10px 0 10px;
+        border-radius: 10px;
+        background-color: white;
+        height: 250px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 夜间适配，改变背景和相关阴影部分 */
+    [data-theme=dark] .section {
+        background-color: #2c2c2c;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 右图左文样式，左边为row，因为是默认的所以不需要指定 */
+    .section.right {
+        flex-direction: row-reverse;
+    }
+
+    /* 节内图片所在位置相关格式，这里是因为我开了fancybox，也就是点击预览大图的效果，使图片被一个a所包裹，如果你关了请自行将该内容添加到下面的img中，其他位置对应调整 */
+    .section a {
+        width: 45%;
+        height: 100%;
+        transition: transform 0.5s ease; /* 添加过渡效果 */
+
+    }
+
+    /* 节内A标签内的图片，占满a标签，并不拉伸，使用覆盖，自适应大小 */
+    .section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* 在鼠标悬停在 .section 上时，放大图片 */
+    .section:hover a {
+        transform: scale(1.10); /* 将图片放大10% */
+    }
+
+    /* 设置放大只在当图片没有消失时，否则这个宽度会覆盖掉设置的小时候为100%的设定 */
+    @media (min-width: 870px) {
+        /* 图像在右边的节，当鼠标放入，适当向左偏移，造成好像被图像挤过去的视觉效果 */
+        .section.right:hover .content {
+            margin-left: 10px;
+        }
+        /* 通用，因为文字是靠左的，改变宽度就被挤过去了 */
+        .section:hover .content {
+            width: 50%;
+            width: 50%;
+        }
+    }
+
+    /* 通用文字部分基础设置 */
+    .section .content {
+        width: 55%;
+        margin: 20px 20px;
+        max-height: 100%;
+        overflow: hidden; /* 超出部分不好看，我给隐藏了，看不见也比超出强，不过这个可以通过修改各种宽度高度进行个性适配 */
+        text-overflow: ellipsis;
+        transition: width 0.5s ease, margin-left 0.3s ease; /* 添加过渡效果 */
+    }
+
+    /* 最下方的一堆个人站点 */
+    .wrapper {
+        text-align: center; /* 文字居中 */
+        padding: 10px;
+        margin: 20px 10px 0 10px;
+        border-radius: 10px;
+        background-color: white;
+        height: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 四个大字 */
+    .wrapper .label {
+        margin: 20px 20px;
+    }
+
+    /* 网格相关链接布局样式 */
+    .wrapper .site-grid {
+        margin-top: 10px;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 一行四块 */
+        gap: 10px; /* 块之间的间隙 */
+        width: 100%;
+        height: auto; /* 宽度自动填充 */
+    }
+
+    /* 每个站点块的样式 */
+    .wrapper .site-grid .site-item {
+        z-index: 1;
+        border-radius: 10px;
+        position: relative;
+        width: 100%;/* 宽度自动填充 */
+        height: 200px;/* 设置块的高度 */
+        background-size: cover;/* 背景图片填充整个块 */
+        background-position: center;/* 背景图片居中 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden; /* 使超出边框的内容隐藏 */
+        transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+    }
+
+
+    /* 动画效果，鼠标放上去时背景图片放大的动画 */
+    @media (min-width: 870px) {
+        .wrapper .site-grid .site-item:hover {
+            transform: scale(1.2); /* 放大倍数 */
+            z-index: 2;
+        }
+    }
+
+    /* 块中的字覆盖层样式 */
+    .wrapper .site-overlay {
+        position: absolute;
+        inset: 0; /* 将 top, right, bottom, left 都设为 0 */
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5); /* 初始为透明背景 */
+        transition: background 0.6s, color 0.6s; /* 背景过渡效果 */
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font: bold 25px sans-serif; /* 根据需求更改字体大小 */
+        color: #000000; /* 根据需求更改字体颜色，默认是黑 */
+    }
+
+    /* 鼠标悬停时的样式 */
+    .wrapper .site-item:hover .site-overlay {
+        background: rgba(0, 0, 0, 0.5); /* 白底变黑 */
+        color: #ffffff; /* 黑字变白 */
+    }
+
+    /* 夜间适配 */
+    [data-theme=dark] .wrapper {
+        background-color: #2c2c2c; /* 这是我全局的夜间统一色，你们自己看 */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* 夜间鼠标悬停动效适配 */
+    [data-theme=dark] .wrapper .site-item:hover .site-overlay {
+        background: rgba(255, 255, 255, 0.5);
+        color: #000000;
+    }
+
+    /* 夜间卡片背景适配，和白天是相反的 */
+    [data-theme=dark] .wrapper .site-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+    }
+
+    /* 窄屏适配 */
+    @media (max-width: 870px) {/* 当页面宽度小于870像素时 */
+        /* 不显示图片 */
+        .section a {
+            display: none;
+        }
+
+        /* 将位置留给文字 */
+        .section .content {
+            width: 100%;
+        }
+        /* 高度自己调整，因为窄屏视野没有那么大，部分节窄一点宽一点不影响，但是最小仍然是之前设置的值，这个需要你们自己改 */
+        .section {
+            height: auto;
+            min-height: 250px;
+        }
+
+        /* 下方链接到现在显示为两列，要不然挤得不行 */
+        .wrapper .site-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* 一行显示2个块 */
+            grid-auto-rows: 200px;
+            /* 保持行高一致 */
+        }
+    }
+
+    /* 当页面宽度小于480像素时，我们的表格成为1列 */
+    @media (max-width: 560px) {
+        .wrapper .site-grid {
+            grid-template-columns: repeat(1, 1fr);
+            /* 一行显示1个块 */
+            grid-auto-rows: 200px;
+            /* 保持行高一致 */
+        }
+    }
+</style>
+
+<div class="author-box">
+    <div class="author-img">
+        <img class="no-lightbox" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog.liushen.fun/info/avatar.ico">
+        <div class="green-dot"></div>
+    </div>
+    <div class="image-dot"></div>
+    <p class="p center logo large">关于我</p>
+    <p class="p center small">柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜</p>
+</div>
+
+<div class="section left">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p.liiiu.cn/i/2024/04/14/661ab011d7d88.png">
+    <div class="content">
+        <div class="info-columns">
+            <h2>个人信息</h2>
+            <ul>
+                <div class="row">
+                    <div class="column">
+                        <li>姓名: stellahuang</li>
+                        <li>住址: 四川省</li>
+                        <li>学校: 不知名高校</li>
+                    </div>
+                    <div class="column">
+                        <li>性别: 嫐</li>
+                        <li>年级: 二〇二四级</li>
+                        <li>专业: 人工智能</li>
+                    </div>
+                </div>
+                <li>邮箱: yasilansi@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="section right">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p.liiiu.cn/i/2024/04/14/661ab051377ef.png">
+    <div class="content">
+        <h2>教育背景</h2>
+        <ul>
+            <li>学校: Catts大学</li>
+            <li>主要专业课程: 干饭.jpg(101.5)</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section left">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p.liiiu.cn/i/2024/04/14/661ab078b3033.png">
+    <div class="content">
+        <h2>学生干部经历</h2>
+        <ul>
+            <li>建构电力学六人组技术部部长</li>
+            <li>人工智能2401班学生</li>
+            <li>冷热链用户交互采集员</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section right">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p.liiiu.cn/i/2024/04/14/661ab09243659.png">
+    <div class="content">
+        <h2>主要项目</h2>
+        <ul>
+            <li>xxxx统计模型</li>
+            <li>嘻嘻嘻嘻</li>
+            <li>人类食欲调查采集分析</li>
+            <li>基于Java实现MySQL数据库双端图书管理系统</li>
+            <li>哈哈哈哈</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section left">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p.liiiu.cn/i/2024/04/14/661ab0c2a778f.png">
+    <div class="content">
+        <h2>技能</h2>
+        <ul>
+            <li>语言技能:汉语</li>
+            <li>专业技能: C++、Java、Python、Linux、HTML、CSS、JavaScript安装与卸载</li>
+            <li>通用技能: Office、Excel、PowerPoint、吃饭、睡觉</li>
+            <li>正在学习中</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section right">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p.liiiu.cn/i/2024/04/14/661ab0ee65c56.png">
+    <div class="content">
+        <h2>荣誉和奖项</h2>
+        <ul>
+            <li>待完善</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section left">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://p.liiiu.cn/i/2024/04/14/661ab10f685ed.png">
+    <div class="content">
+        <h2>自我评价</h2>
+        <ul>
+            <li>是个真正的人</li>
+            <li>总结：人嘎嘎好！</li>
+        </ul>
+    </div>
+</div>
+
+
+</div></div></main><footer id="footer" style="background-image: url(/img/bg.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">©&nbsp;2025 - 2026 By Catts</span></div><div class="footer_custom_text">你已经触碰到我的底线😅😅😅<a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index"><span>备案号：蜀ICP备2026009728号</span></a><div id="runtime"></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="/js/sweetalert.js"></script><script type="text/javascript" src="/js/welcome.js"></script><div class="aplayer no-destroy" data-id="9677098392" data-server="tencent" data-type="playlist" data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      true
+        ? pjax.loadUrl('/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})</script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索一次自动扣5元" type="text"></div><hr><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div><!-- hexo injector body_end start --><script data-pjax="">
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2026/03/09/Buttterfly主题美化（一）/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/安静氛围-森林 (1).png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2026-03-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2026/03/09/Buttterfly主题美化（一）/&quot;);" href="javascript:void(0);" alt="">Butterfly主题配置文件汉化</a><div class="blog-slider__text">这是Butterfly主题配置文件汉化</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2026/03/09/Buttterfly主题美化（一）/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2026/03/09/《挪威的森林》书评/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/傍晚路灯-山脉-水面.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2026-03-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2026/03/09/《挪威的森林》书评/&quot;);" href="javascript:void(0);" alt="">《挪威的森林》关于我接触村上春树的第一本书（有剧透）</a><div class="blog-slider__text">他描绘的不仅是爱情，更是自我救赎之路</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2026/03/09/《挪威的森林》书评/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer="" src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer="" data-pjax="" src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><!-- hexo injector body_end end --></body></html>
